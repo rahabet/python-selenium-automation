@@ -1,0 +1,10 @@
+Amazon logo :- xpath ("//i[@class= 'a-icon a-icon-logo']")
+Email field :- By.ID (//input[@id= 'ap_email']")
+Continue button :- By.ID("//input[@id= 'continue']")
+Need help link :- xpath ("//span[@class= 'a-expander-prompt']")
+Forgot your password link :- By.ID ("//a[@id= 'auth-fpp-link-bottom']")
+Other issues with Sign-In link :- By.ID ("//a[@id= 'ap-other-signin-issues-link']")
+Create your Amazon account button :- By.ID ("//a[@id= 'createAccountSubmit']")
+*Conditions of use link :- Inner text (//a[text()='Conditions of Use'])
+*Privacy Notice link :- Inner text (//a[text()='Privacy Notice'])
+
