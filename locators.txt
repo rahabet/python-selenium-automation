@@ -8,3 +8,17 @@ Create your Amazon account button :- By.ID ("//a[@id= 'createAccountSubmit']")
 *Conditions of use link :- Inner text (//a[text()='Conditions of Use'])
 *Privacy Notice link :- Inner text (//a[text()='Privacy Notice'])
 
+------------------------------------------------------------------
+Locators for create amazon account webpage
+-> logo :- i.a-icon.a-icon-logo
+-> create account :- h1.a-spacing-small
+-> your name :- input#ap_customer_name
+-> email:- input#ap_email
+-> password:- input#ap_password
+-> re-enter password:- input#ap_password_check
+-> create your account amazon button :- input#continue
+-> conditions of use :- a[href *='/ref=ap_register_notification_condition_of_use
+-> privacy notice :- a[href *='ap_register_notification_privacy_notice'
+-> sign in link :- .a-link-emphasis
+
+
