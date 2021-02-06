@@ -1,7 +1,8 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from behave import given, when, then
 from time import sleep
-from selenium.webdriver.common.keys import Keys
+
 
 SEARCH_INPUT = (By.ID,'helpsearch')
 RESULTS_FOUND_MESSAGE = (By.XPATH,"//div[@id='totalSearchResults']/preceding::p/b")
