@@ -4,4 +4,4 @@ Feature: Test case to verify that every product
 
   Scenario: Verify whole food products
     Given Open wholefoods page from amazon website
-    Then Verify 36 wholefoods products has a name and Regular text
+    Then Verify that wholefoods products has a name and Regular text

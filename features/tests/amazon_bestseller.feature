@@ -4,3 +4,4 @@ Feature: Test case for verifying amazon bestsellers tabs
   Scenario: Verify Amazon Bestseller links
     Given Open amazon bestseller page
     Then Verify 5 links are there displayed in the header
+    Then Verify each link has opened and content is visible

@@ -1,4 +1,3 @@
-from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -28,3 +27,4 @@ assert 'Dress' in driver.find_element(By.XPATH, "//div[contains(@class,'commerci
 assert 'Dress' in driver.find_element(By.XPATH, "//div[@class='g']").text
 
 driver.quit()
+
