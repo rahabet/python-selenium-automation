@@ -11,13 +11,13 @@ RESULTS_FOUND_MESSAGE = (By.XPATH,"//div[@id='totalSearchResults']/preceding::p/
 def open_amazon_cancel_order(context):
     context.driver.get('https://www.amazon.com/gp/help/customer/display.html')
 
-@when('Enter {search_query} into search field')
-def input_search(context, search_query):
-    search = context.driver.find_element(*SEARCH_INPUT)
-    search.clear()
-    search.send_keys(search_query)
-    search.send_keys(Keys.ENTER)
-    sleep(1)
+# @when('Enter {search_query} into search field')
+# def input_search(context, search_query):
+#     search = context.driver.find_element(*SEARCH_INPUT)
+#     search.clear()
+#     search.send_keys(search_query)
+#     search.send_keys(Keys.ENTER)
+#     sleep(1)
 # @when('Press Enter Key')
 # def press_enter(context):
 #     context.driver.find_element(*SEARCH_INPUT, Keys.ENTER)

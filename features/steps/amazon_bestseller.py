@@ -21,13 +21,14 @@ def verify_bestseller_links(context, expected_count):
 
 @then('Verify each link has opened and content is visible')
 def click_and_verify_links(context):
-    links = context.driver.wait.until(EC.visibility_of_all_elements_located(BESTSELLER_TABS))    #
-    for link in links:
-        print(link.text)
+    links = context.driver.find_elements(*BESTSELLER_TABS)
+    for l in range(len(links)):
+        link = context.driver.find_elements(*BESTSELLER_TABS)[l]
+        link_text = link.text
         link.click()
-        sleep(2)
         result_msg = context.driver.wait.until(EC.presence_of_element_located(BESTSELLER_TEXT)).text
-  
+        assert link_text in result_msg, f'ERROR...'
+
 
 
 

@@ -4,4 +4,7 @@ Feature: Test scenario for checking cart is empty
   Scenario: User can check their amazon cart is empty
     Given Open Amazon webpage
     When Click on cart icon
-    Then A message your amazon cart is empty should be displayed
+    Then A message Your Amazon Cart is empty should be displayed
+
+
+
